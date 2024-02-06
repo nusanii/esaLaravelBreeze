@@ -1,0 +1,1 @@
+<img src="{{asset('build/assets/esa_logo.png')}}" width="50px">
