@@ -1,7 +1,7 @@
 <x-app-layout>
 
     <x-slot name="title">
-        about bitexh
+        about
     </x-slot>
     
     {{-- <x-slot name="header">
