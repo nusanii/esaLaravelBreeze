@@ -29,6 +29,6 @@ Route::middleware('auth')->group(function () {
 
 Route::get('admin', function(){
     return '<h1>Helo Admin</h1>';
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth', 'verified','role:admin'])->name('dashboard');
 
 require __DIR__.'/auth.php';
