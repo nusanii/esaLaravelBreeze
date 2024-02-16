@@ -33,6 +33,6 @@ Route::get('admin', function(){
 
 Route::get('penulis', function(){
     return '<h1>Helo Penulis</h1>';
-})->middleware(['auth', 'verified','role:penulis'])->name('dashboard');
+})->middleware(['auth', 'verified','role:penulis|admin'])->name('dashboard');
 
 require __DIR__.'/auth.php';
