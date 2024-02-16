@@ -31,4 +31,8 @@ Route::get('admin', function(){
     return '<h1>Helo Admin</h1>';
 })->middleware(['auth', 'verified','role:admin'])->name('dashboard');
 
+Route::get('penulis', function(){
+    return '<h1>Helo Penulis</h1>';
+})->middleware(['auth', 'verified','role:penulis'])->name('dashboard');
+
 require __DIR__.'/auth.php';
